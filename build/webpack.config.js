@@ -21,8 +21,8 @@ module.exports = {
   devtool: process.env.NODE_ENV === 'production' ? false : 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    stats: 'errors-only',
-    compress: false,
+    // stats: 'errors-only',
+    compress: true,
     host: 'localhost',
     port: 3000
   },
