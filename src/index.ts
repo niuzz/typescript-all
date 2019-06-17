@@ -1,4 +1,4 @@
-import { tuple, Roles } from './1'
+import { Roles, tuple } from './basic/type'
 const str: string = 'Hello Orange world'
 
 const h2 = document.createElement('h2')
