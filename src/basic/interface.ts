@@ -20,7 +20,7 @@ const getVegetables = ({ color, type }: IVegetables) => {
 // 绕开多余参数检查
 // 类型断言
 interface IVegetables1 {
-  color?: string,
+  color?: string
   type: string
 }
 const getVegetables1 = ({ color, type }: IVegetables1) => {
@@ -110,8 +110,10 @@ interface ICounter {
   (): void // 这里定义Counter这个机构必须包含一个函数，函数的要求是无参数，返回值为void，即无返回值
   count: number // 而且这个结构还必须包含一个名为count、值的类型为number类型的属性
 }
-const getCounter = (): ICounter => { // 这里定义一个函数用来返回这个计数器
-  const c = () => { // 定义一个函数，逻辑和前面例子的一样
+const getCounter = (): ICounter => {
+  // 这里定义一个函数用来返回这个计数器
+  const c = () => {
+    // 定义一个函数，逻辑和前面例子的一样
     c.count++
   }
   c.count = 0 // 再给这个函数添加一个count属性初始值为0

@@ -20,9 +20,7 @@ const getArrayFuncImp: GetArrayFunc1 = <T>(arg: T, times: number): T[] => {
 }
 
 // 接口
-interface GetArrayFuncIf {
-  <T>(arg: T, times: number): T[]
-}
+type GetArrayFuncIf = <T>(arg: T, times: number) => T[]
 
 // 泛型约束
 interface IValueWithLength {

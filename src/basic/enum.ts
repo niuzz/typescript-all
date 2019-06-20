@@ -26,7 +26,7 @@ enum E {
   A,
   B
 }
-const getIndex = (enumObj: {A: number}): number => {
+const getIndex = (enumObj: { A: number }): number => {
   return enumObj.A
 }
 

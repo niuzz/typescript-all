@@ -4,3 +4,4 @@ dist
 .cache-loader
 yarn-error.log
 yarn.lock
+.vscode/
